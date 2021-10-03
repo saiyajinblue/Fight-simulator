@@ -1,22 +1,24 @@
 import random
-
-vegeta = [1,3,5,7,9]
-goku = [0,2,4,6,8]
+import sleep
 
 v = 100
 g = 100
 
+print("vegeta power level: ", v)
+print("goku power level:   ", g)
+print()
 while True:
-   num = random.randint(1,9)
-   if num in vegeta:
+   sleep(2)
+   num = random.randint(1,10)
+   if num %2 == 0:
       v-=20
    else:
       g-=20
    print("vegeta power level: ", v)
-   print("goku power level: ", g)
+   print("goku power level:   ", g)
    if g==0:
-      print("Vegeta won the fight")
+      print("\nVegeta is winner!")
       break
-   else:
-      print("Goku won the fight")
+   if v==0:
+      print("\nGoku is winner!")
       break
