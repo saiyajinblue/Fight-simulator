@@ -14,4 +14,9 @@ while True:
       g-=20
    print(f"vegeta power level: {v})
    print(f"goku power level: {g})
-   break
+   if g==0:
+      print("Vegeta won the fight")
+      break
+   else:
+      print("Goku won the fight")
+      break
